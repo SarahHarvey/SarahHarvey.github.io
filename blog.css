@@ -1,0 +1,139 @@
+/*
+ * Minimal blog styles for sarahharvey.github.io
+ */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #000;
+    background: #fff;
+}
+
+/* Keep the blog left-aligned like the existing homepage, but stop very long
+   lines from stretching across an entire wide monitor. */
+.blog-container {
+    max-width: 850px;
+}
+
+.blog-header {
+    margin-bottom: 2em;
+}
+
+.blog-header h2 {
+    margin-bottom: 0.25em;
+}
+
+.blog-nav {
+    margin-top: 0.5em;
+}
+
+.blog-intro {
+    margin-bottom: 2em;
+}
+
+.post-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-list-item {
+    margin-bottom: 2em;
+}
+
+.post-list-item h3 {
+    margin-bottom: 0.15em;
+}
+
+.post-date {
+    color: #555;
+    font-size: 0.95em;
+}
+
+.post-description {
+    margin-top: 0.45em;
+}
+
+.post-header {
+    margin-bottom: 2em;
+}
+
+.post-header h2 {
+    margin-bottom: 0.2em;
+}
+
+.post-content {
+    line-height: 1.5;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+.post-content p {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-content blockquote {
+    margin-left: 1.5em;
+    padding-left: 1em;
+    border-left: 2px solid #aaa;
+}
+
+.post-content code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+.post-content :not(pre) > code {
+    background: #f3f3f3;
+    padding: 0.08em 0.25em;
+}
+
+.post-content pre {
+    overflow-x: auto;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    padding: 0.8em;
+    line-height: 1.35;
+}
+
+.post-content table {
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+.post-content th,
+.post-content td {
+    border: 1px solid #aaa;
+    padding: 0.35em 0.6em;
+    text-align: left;
+}
+
+.post-footer {
+    margin-top: 3em;
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .blog-container {
+        max-width: 100%;
+    }
+}
