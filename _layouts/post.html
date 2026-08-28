@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Sarah Harvey</title>
+    <link rel="stylesheet" href="{{ '/blog.css' | relative_url }}">
+
+    <!-- Your _config.yml already tells Kramdown to use MathJax syntax.
+         Kramdown converts math to \(...\) / \[...\]; this script renders it. -->
+    <script defer id="MathJax-script"
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="blog-container">
+
+    <div class="blog-header">
+        <h2>Sarah Harvey, Ph.D.</h2>
+        <div class="blog-nav">
+            <a href="{{ '/' | relative_url }}">Home</a> |
+            <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+        </div>
+    </div>
+
+    <article>
+        <header class="post-header">
+            <h2>{{ page.title }}</h2>
+            <div class="post-date">
+                {{ page.date | date: "%B %-d, %Y" }}
+            </div>
+        </header>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
+
+    <div class="post-footer">
+        <hr>
+        <p><a href="{{ '/blog.html' | relative_url }}">&larr; Back to all posts</a></p>
+    </div>
+
+</div>
+</body>
+</html>
